@@ -1,0 +1,248 @@
+/* body csss */
+body{
+    font-family: "Prociono", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+/* Custom Navbar Link Animation */
+    .navbar-nav .nav-link {
+      position: relative;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    /* Line below text animation */
+    .navbar-nav .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 50%;
+      background-color: #ffb400;
+      transition: all 0.4s ease;
+      transform: translateX(-50%);
+    }
+
+    /* Hover effects */
+    .navbar-nav .nav-link:hover {
+      color: #ff0066; /* Change text color on hover */
+    }
+
+    .navbar-nav .nav-link:hover::after {
+      width: 100%; /* Extend line to full width on hover */
+    }
+
+    /* Animation on Navbar when it becomes visible */
+    .navbar-nav .nav-item {
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInUp 0.6s forwards;
+    }
+
+    /* Delay the animation for each item */
+    .navbar-nav .nav-item:nth-child(1) { animation-delay: 0.2s; }
+    .navbar-nav .nav-item:nth-child(2) { animation-delay: 0.4s; }
+    .navbar-nav .nav-item:nth-child(3) { animation-delay: 0.6s; }
+    .navbar-nav .nav-item:nth-child(4) { animation-delay: 0.8s; }
+
+    /* Keyframes for fadeInUp effect */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* background image */
+.bgimg{
+    background:linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4)),url('../images/mountain.avif');
+    height: 650px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+}
+/* middle heading */
+.head1{
+        font-family: "Prociono", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+/* cheveron button */
+.btn-scroll i{
+    transition: 0.4s;
+    color:color-mix(in srgb, var(--default-color), transparent 60%);
+    display: block;
+    margin-top: 30px;
+    animation: btn-up-down 1s ease-in-out infinite alternate-reverse both;
+}
+/* about section */
+#about span{
+        position: relative;
+        top: 4px;
+        color:rgba(0, 0, 0, 0.1);
+        left: 0;
+        right: 0;
+        z-index: 1;
+        font-weight: 700;
+        font-size: 52px;
+        text-transform: uppercase;
+        line-height: 1;
+    
+}
+#about h1{
+    position: relative;
+    top: -30px;
+    font-size: 45px;
+    font-weight: 700;
+}
+#resume span{
+    position: relative;
+    top: 4px;
+    color:rgba(0, 0, 0, 0.1);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+#resume h1{
+position: relative;
+top: -30px;
+font-size: 45px;
+font-weight: 700;
+}
+#projects span{
+    position: relative;
+    top: 4px;
+    color:rgba(0, 0, 0, 0.1);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+#projects h1{
+position: relative;
+top: -30px;
+font-size: 45px;
+font-weight: 700;
+}
+#skills span{
+    position: relative;
+    top: 4px;
+    color:rgba(0, 0, 0, 0.1);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+#skills h1{
+position: relative;
+top: -30px;
+font-size: 45px;
+font-weight: 700;
+}
+.box{
+    background-color: lightgrey;
+}
+.box p{
+    height: 10px;
+    width: 90%;
+    background-color: rgba(37, 37, 230, 0.767);
+}
+
+.box1{
+    background-color: lightgrey;
+}
+.box1 p{
+    height: 10px;
+    width: 60%;
+    background-color: rgba(37, 37, 230, 0.767);
+}
+.box2{
+    background-color: lightgrey;
+}
+.box2 p{
+    height: 10px;
+    width: 40%;
+    background-color: rgba(37, 37, 230, 0.767);
+}
+.box3{
+    background-color: lightgrey;
+}
+.box3 p{
+    height: 10px;
+    width: 85%;
+    background-color: rgba(37, 37, 230, 0.767);
+}
+.box4{
+    background-color: lightgrey;
+}
+.box4 p{
+    height: 10px;
+    width: 40%;
+    background-color: rgba(37, 37, 230, 0.767);
+}
+.box5{
+    background-color: lightgrey;
+}
+.box5 p{
+    height: 10px;
+    width: 10%;
+    background-color: rgba(37, 37, 230, 0.767);
+}
+.box6{
+    background-color: lightgrey;
+}
+.box6 p{
+    height: 10px;
+    width: 30%;
+    background-color: rgba(37, 37, 230, 0.767);
+}
+.box7{
+    background-color: lightgrey;
+}
+.box7 p{
+    height: 10px;
+    width: 10%;
+    background-color: rgba(37, 37, 230, 0.767);
+}
+/* footer css */
+.foot{
+    background:linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.8)),url('../images/moutain2.avif');
+    /* height: 250px; */
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.smi{
+    background-color: #f7d739;
+    height: 35px;
+    font-weight: bold   ;
+    width: 35px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+   
+}
